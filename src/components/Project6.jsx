@@ -32,7 +32,7 @@ function Project6() {
             {/* <div className=" bg-black text-white"> */}
             <div className="flex flex-wrap gap-[20px]">
                 <div className={`transition-transform duration-300 ease-in-out hover:scale-105 hover:-translate-y-2 cursor-pointer rounded-md px-[18px] py-[5px] text-[14px] flex flex-row justify-center items-center space-x-[10px] border border-gray-600 ${isLight ? "bg-black text-white hover:text-amber-300": "bg-white text-black hover:text-indigo-600"}`}>
-                    <button className='cursor-pointer font-medium' onClick={() => window.open("https://github.com/Raby001/TRADETree", "_blank")}>
+                    <button className='cursor-pointer font-medium' onClick={() => window.open("https://github.com/Raby001/Portfolio-Raby", "_blank")}>
                     Github
                     </button>
                     <Github size = "16" />
