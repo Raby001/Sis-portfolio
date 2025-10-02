@@ -1,6 +1,6 @@
 import React from 'react'
 import { useOutletContext } from 'react-router-dom'
-import Project1 from '../components/project1';
+import Project1 from '../components/Project1';
 import Project2 from '../components/Project2';
 import { ArrowUpRight } from 'lucide-react';
 import Project3 from '../components/Project3';
