@@ -12,7 +12,7 @@ function School2() {
                   <img className='h-[70px]' src={ifl} alt="" />
                 </div>
                 <div className={`${isLight ? "text-gray-950":"text-gray-300"}`}>
-                  <p className='text-[14px]'>Oct 2018 - Jul 2022</p>
+                  <p className='text-[14px]'>Nov 2018 - Jul 2022</p>
                   <p className={`font-bold ${isLight ? "text-black":"text-white"}`}>Institute of Foreign Languages (IFL)</p>
                   <p>Bachelor Degree of Arts in English for Translation and Interpreting</p>
                 </div>

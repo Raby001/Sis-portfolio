@@ -31,9 +31,9 @@ function Home() {
         <div className="flex flex-row justify-center font-secondary text-[12px] sm:text-[18px]">
           <p className='font-light text-[12px] sm:text-[16px]'>A detail-oriented professional with a Master's in Data Science and a Bachelor's in Statistics, currently a System Integration and Support Engineer.</p>
         </div>
-        <p className='text-[12px] sm:text-[16px] mt-10 font-bold font-secondary'>Aspiring Data Scientist / Analyst</p>
+        <p className='text-[12px] sm:text-[16px] mt-10 font-bold font-secondary'>Aspiring Data Scientist / Data Analyst</p>
         
-        <p className='mt-4 text-[12px] sm:text-[14px]'>For Q&A, Just Call Me for Interview 🤣</p>
+        <p className='mt-4 text-[12px] sm:text-[14px]'>For Q&A, Just Contact Me for Interview 🤣</p>
         <div className=" mt-10 flex md:flex-row  items-center justify-start flex-col gap-[30px]">
           <div className={`cursor-pointer rounded-md px-[18px] py-[5px] text-[14px] flex flex-row justify-center items-center space-x-[10px] border border-gray-600 ${isLight?"hover:text-indigo-600":"hover:text-amber-300"} `}>
             <button className='cursor-pointer font-medium' onClick={() => window.open("https://drive.google.com/file/d/1eKTJgNmb8Ijxj25l7CflxXZJtCy2xMX3/view?usp=drivesdk", "_blank")}>

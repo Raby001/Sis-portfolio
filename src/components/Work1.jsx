@@ -16,7 +16,7 @@ function Work1() {
                   <p>System Integration and Support Engineer</p>
                   <div className="px-2 mt-[10px]">
                     <ul className='list-disc list-inside'>
-                      <li>Collaborated with various related teams to identify and address the root causes of customerreported issues, providing effective technical solutions to enhance user satisfaction.</li>
+                      <li>Collaborated with various related teams to identify and address the root causes of customer-reported issues, providing effective technical solutions to enhance user satisfaction.</li>
                       <li>Maintained daily reports on phone top-up transaction failures.</li>
                       <li>Extracted and analyzed failed transaction data from Kibana logs.</li>
                     </ul>
