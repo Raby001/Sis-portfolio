@@ -1,20 +1,20 @@
 import React, { useState } from 'react'
-import profile1 from '../assets/profile1.png'
-import itc from '../assets/itc.png'
-import western from '../assets/western.png'
-import nothing from '../assets/nothing.png'
+import profile1 from '../assets/profile1.jpg'
 
-import {FileDown, Github, Mail, Linkedin, Youtube, Chromium, ArrowUpRight} from 'lucide-react'
+import {FileDown, Github, Mail, Linkedin, ArrowUpRight} from 'lucide-react'
 import { useNavigate, useOutletContext } from 'react-router-dom'
 import Project6 from '../components/Project6'
-import Project2 from '../components/Project2'
+import Project1 from '../components/Project1'
 import School1 from '../components/School1'
 import School2 from '../components/School2'
+import School3 from '../components/School3'
+import Work1 from '../components/Work1'
+import Work2 from '../components/Work2'
 import Skill from '../components/Skill'
 
 function Home() {
   const {isLight, setIsLight} = useOutletContext();
-  const [isLeft, setIsLeft] = useState(false);
+  const [isLeft, setIsLeft] = useState(true);
   const navigate = useNavigate();
 
 
@@ -27,34 +27,31 @@ function Home() {
       </div>
 
       <div className="w-[50vw] md:w-auto">
-        <h1 className = "text-[24px] mt-[20px] sm:mt-0 sm:text-[32px] md:text-[44px] font-secondary font-black">Raby is here👋 </h1>
+        <h1 className = "text-[24px] mt-[20px] sm:mt-0 sm:text-[32px] md:text-[44px] font-secondary font-black">This is Chandeth 👋</h1>
         <div className="flex flex-row justify-center font-secondary text-[12px] sm:text-[18px]">
-          <div className="flex flex-row justify-center font-black">
-            <p>4</p>
-            <p className='text-[12px] sm:text-[16px]'>th</p>            
-          </div>
-          <p className='pl-2'>years student from Institute of Technology of Cambodia <span className='font-black'>(ITC)</span> </p>
+          <p className='font-light text-[12px] sm:text-[16px]'>A detail-oriented professional with a Master's in Data Science and a Bachelor's in Statistics, currently a System Integration and Support Engineer.</p>
         </div>
-        <p className='text-[12px] sm:text-[14px] mt-10 font-bold font-secondary'>A Computer Science Student | Aspiring Full Stack Developer</p>
+        <p className='text-[12px] sm:text-[16px] mt-10 font-bold font-secondary'>Aspiring Data Scientist / Analyst</p>
         
         <p className='mt-4 text-[12px] sm:text-[14px]'>For Q&A, Just Call Me for Interview 🤣</p>
         <div className=" mt-10 flex md:flex-row  items-center justify-start flex-col gap-[30px]">
           <div className={`cursor-pointer rounded-md px-[18px] py-[5px] text-[14px] flex flex-row justify-center items-center space-x-[10px] border border-gray-600 ${isLight?"hover:text-indigo-600":"hover:text-amber-300"} `}>
-            <button className='cursor-pointer font-medium' onClick={() => window.open("https://drive.google.com/file/d/1iUv6ZCv0PsKjnkXrgbXI1Qukfvu6D-g1/view?usp=sharing", "_blank")}>
-              Resume
+            <button className='cursor-pointer font-medium' onClick={() => window.open("https://drive.google.com/file/d/1eKTJgNmb8Ijxj25l7CflxXZJtCy2xMX3/view?usp=drivesdk", "_blank")}>
+              My CV
             </button>
             <FileDown size = "16" />
             
           </div> 
           <div className="">
             <div className="flex flex-row justify-center space-x-2 sm:space-x-4">
-              <a href='https://github.com/Raby001' target="_blank"  rel="noopener noreferrer" className={`cursor-pointer ${isLight?"hover:text-indigo-600":"hover:text-amber-300"}`}>
+              <a href='https://github.com/Chandeth-H?tab=repositories' target="_blank"  rel="noopener noreferrer" className={`cursor-pointer ${isLight?"hover:text-indigo-600":"hover:text-amber-300"}`}>
                 <Github size = "20"/>
               </a>
-              <a href = "mailto:hanraby001@gmail.com" target="_blank" rel="noopener noreferrer" className={`cursor-pointer ${isLight?"hover:text-indigo-600":"hover:text-amber-300"}`}>
-                <Mail size = "20"/>
+              <a onClick ={() => navigate("/contact")} className={`cursor-pointer ${isLight ? "hover:text-indigo-600" : "hover:text-amber-300"}`}>
+                <Mail size={20} />
               </a>
-              <a href="https://www.linkedin.com/in/raby-han-4106a535a/" target="_blank" rel="noopener noreferrer" className={`cursor-pointer ${isLight?"hover:text-indigo-600":"hover:text-amber-300"}`}>
+
+              <a href="https://www.linkedin.com/in/chandeth-han-9ab6ab24b/" target="_blank" rel="noopener noreferrer" className={`cursor-pointer ${isLight?"hover:text-indigo-600":"hover:text-amber-300"}`}>
                 <Linkedin size = "20" />
               </a>
             </div>
@@ -80,25 +77,16 @@ function Home() {
     <div className={`shadow-lg  border-2 rounded-lg mt-[12px] ${isLight ? "border-gray-300":"border-gray-700"}`}>
       <div className="">
         {!isLeft && (
-          <div className="flex flex-col">
+          <div className="flex flex-col items-start">
             <School1/>
             <School2/>
+            <School3/>
           </div>
         )}  
         {isLeft && (
-          <div className="flex flex-col">
-            {/* school 1 */}
-            <div className={`mb-[10px] px-[30px] py-[30px] space-y-[30px]`}>
-              <div className="flex flex-col justify-center items-center sm:flex-row space-x-[15px]">
-                <div className=""> 
-                  <img className='h-[60px]' src={nothing} alt="" />
-                </div>
-                <div className={`${isLight ? "text-gray-950":"text-gray-300"}`}>
-                  <p className={`font-bold ${isLight ? "text-black":"text-white"}`}>Unfortunately, I don't have work experience yet</p>
-                </div>
-              </div>
-              <hr className={`h-[2px] font-bold ${isLight ? " bg-black":" bg-white"}`}/>
-            </div>
+          <div className="flex flex-col items-start">
+            <Work1/>
+            <Work2/>
           </div>
         )} 
       </div>
@@ -117,7 +105,7 @@ function Home() {
     {/* Project  */}
     <div className="my-[100px]">
       <div className="flex flex-row justify-between items-center mb-[30px]">
-        <h1 className = "text-[32px] md:text-[38px] font-secondary font-black">Project 🫡</h1>
+        <h1 className = "text-[32px] md:text-[38px] font-secondary font-black">Personal Project 🫡</h1>
         <div onClick={() => navigate("/projects")} className="hover:text-indigo-400 cursor-pointer font-secondary font-medium flex flex-row justify-between items-center space-x-1.5">
           <p>View more</p> 
           <ArrowUpRight />
@@ -125,7 +113,7 @@ function Home() {
       </div>
       <div className="flex flex-col md:flex-row flex-wrap items-center justify-between ">
         <Project6/>
-        <Project2/>
+        <Project1/>
       </div>
     </div>
 

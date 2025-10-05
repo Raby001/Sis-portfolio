@@ -15,7 +15,6 @@ function Navbar({isLight, setIsLight}) {
             <ul className='flex flex-row space-x-4 sm:space-x-8 text-[12px] sm:text-[16px]'>
               <li onClick ={() => navigate("/")} className={`cursor-pointer ${!isLight ? "hover:text-amber-200": "hover:text-indigo-600"}`}>Home</li>
               <li onClick ={() => navigate("/projects")} className={`cursor-pointer ${!isLight ? "hover:text-amber-200": "hover:text-indigo-600"}`}>Project</li>
-              <li onClick ={() => navigate("/competition")} className={`cursor-pointer ${!isLight ? "hover:text-amber-200": "hover:text-indigo-600"}`}>Competition</li>
               <li onClick ={() => navigate("/contact")} className={`cursor-pointer ${!isLight ? "hover:text-amber-200": "hover:text-indigo-600"}`}>Contact</li>
             </ul>
           </div>

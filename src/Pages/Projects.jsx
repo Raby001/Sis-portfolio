@@ -15,15 +15,15 @@ function Projects() {
     <div className='mt-[100px]'>
       <div className="my-[100px]">
         <div className="flex flex-row justify-between items-center mb-[30px]">
-          <h1 className = "text-[32px] md:text-[38px] font-secondary font-black">Project 🫡</h1>
+          <h1 className = "text-[32px] md:text-[38px] font-secondary font-black">Personal Project 🫡</h1>
         </div>
-        <div className="flex flex-col md:flex-row flex-wrap items-center justify-between gap-[20px]">
+        <div className="flex flex-col md:flex-row flex-wrap items-start justify-between gap-[20px]">
           <Project2/>
-          <Project6/>
-          <Project1/>
-          <Project5/>          
-          <Project3/>
           <Project4/>
+          <Project1/>
+          <Project5/> 
+          <Project6/>
+          <Project3/>
         </div>
       </div>
     </div>
